@@ -1,0 +1,34 @@
+{
+  "name": "toggle-hotplug",
+  "version": "0.0.0",
+  "description": "Toggle macOS Sierra hotplug on and off",
+  "main": "index.js",
+  "repository": "https://github.com/bukinoshita/toggle-hotplug.git",
+  "author": "Bu Kinoshita <bukinoshita@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "mac",
+    "macos",
+    "sierra",
+    "hot",
+    "plug",
+    "hotplug",
+    "image",
+    "photos"
+  ],
+  "files": ["index.js"],
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "dependencies": {
+    "execa": "^0.8.0"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "eslint-config-prettier": "^2.6.0",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "extends": ["prettier"]
+  }
+}

@@ -1,5 +1,3 @@
-'use strict'
-
 import test from 'ava'
 import { isOn, toggle } from '.'
 
@@ -9,13 +7,13 @@ if (process.env.CI) {
     t.pass()
   })
 } else {
-  test.after(async () => {
-    await toggle()
-  })
-
   test('main', async t => {
     t.true(await isOn())
     await toggle()
     t.false(await isOn())
+  })
+  
+  test.after(async () => {
+    await toggle()
   })
 }

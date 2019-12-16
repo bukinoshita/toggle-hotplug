@@ -1,9 +1,6 @@
 import test from 'ava'
 import { isOn, toggle } from '.'
 
-import test from 'ava'
-import { isOn, toggle } from '.'
-
 if (!process.env.CI) {
   // Travis doesn't have hotplug
   test('travis', t => {
